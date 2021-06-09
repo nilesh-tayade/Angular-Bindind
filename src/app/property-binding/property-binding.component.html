@@ -5,4 +5,27 @@
 <p>Username : <input type="text" [value]="username"></p>
 
 <p>Isdisable Example <input type="button" class="btn  btn-primary" value="Submit" [disabled]="isDisabled"></p>
+
+<br><br>
+<span [innerHTML]="prodata"></span>
+<br><br>
+<h5>Image binding example by interpolation</h5>
+<img src="{{img1}}" alt="" width="40px" height="40px">
+<h5>Image binding example by property binding</h5>
+
+<img [src]="img1" alt="" width="40px" height="40px">
+</div>
+
+<h5>Image binding iteration example by interpolation</h5>
+
+<div *ngFor="let image of images">
+
+    <img src="{{image}}" alt="" width="40px" height="40px">
+</div>
+
+<h5>Image binding iteration example by Property Binding</h5>
+
+<div *ngFor="let image of images">
+
+    <img [src]="image" alt="" width="40px" height="40px">
 </div>

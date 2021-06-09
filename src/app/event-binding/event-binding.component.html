@@ -4,4 +4,17 @@
 <h1 class="text-primary m-3">{{data}}</h1>
 
 <h1 (mouseover)="m1()"  (mouseout)="m2()">{{msg}}</h1>
+<br>
+<br>
+<h4>This is A keyup example </h4>
+<input class="form-group" type="text" (keyup)="0" #sun> <br> 
+text in input : {{sun.value}}
+<br>
+<br>
+<h4>This is A Click event example </h4>
+<input class="form-group" type="text"  #name> <br> 
+
+<button (click)="onclick(name.value)" >Get Input Data</button>
+<br>
+text in input : {{invalue}}
 </div>

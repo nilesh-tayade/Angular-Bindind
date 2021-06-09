@@ -11,6 +11,20 @@ export class PropertyBindingComponent implements OnInit {
 
   username:string="nileshtayade";
   isDisabled:boolean=false;
+  prodata:string="This is by Inner Html Propeerty Binding"
+
+img1="assets/admin.jpg";
+
+images :string[]=[
+  "assets/laptop1.jpeg",
+  "assets/laptop2.jpeg",
+  "assets/laptop3.jpeg",
+  "assets/laptop4.jpeg",
+  "assets/laptop5.jpeg",
+
+]
+
+
   ngOnInit(): void {
   }
 
