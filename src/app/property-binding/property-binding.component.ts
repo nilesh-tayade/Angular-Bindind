@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Person } from '../person';
 
 @Component({
   selector: 'app-property-binding',
@@ -25,8 +26,35 @@ images :string[]=[
 ]
 
 
+
   ngOnInit(): void {
   }
 
+  persons :Person[]=[
+    {
+      fullname:"Nilesh Tayade",
+      city:"Pune",
+      image: "assets/laptop1.jpeg",
+      course:"Java"
+    },
+    {
+      fullname:"Aniket  Dhaigude",
+      city:"Satara",
+      image: "assets/laptop2.jpeg",
+      course:"Python"
+    },
+    {
+      fullname:"Ajinkya Deshmukh",
+      city:"Akola",
+      image: "assets/laptop3.jpeg",
+      course:"Android"
+    },
+    {
+      fullname:"Mahesh Sukalkar",
+      city:"Buldhana",
+      image: "assets/laptop4.jpeg",
+      course:"PHP"
+    }
+  ]
  
 }

@@ -1,0 +1,21 @@
+<div class="jumbotron">
+<h1 class="text-center text-muted">Two way Data Binding Demo </h1>
+
+<h5>By Combination of Event Binding and Property Binding</h5>
+<div class="form-group" style="width: 50%;">
+    <label >Enter Your Name</label>
+    <input type="text" class="form-control" [value]="firstname"  (input)='firstname=$event.target.value'>
+  </div> 
+ <p>Your Name : {{firstname}}</p>
+
+
+ <hr>
+
+ <h5>By Using ngModel</h5>
+<div class="form-group" style="width: 50%;">
+    <label >Enter Your Pet Name</label>
+    <input type="text" class="form-control" [(ngModel)]="petname">
+  </div> 
+ <p>Your Name : {{petname}}</p>
+
+</div>

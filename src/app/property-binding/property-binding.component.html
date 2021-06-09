@@ -29,3 +29,29 @@
 
     <img [src]="image" alt="" width="40px" height="40px">
 </div>
+
+<br><br>
+
+<div class="jumbotron">
+
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">City</th>
+            <th scope="col">Image</th>
+
+            <th scope="col">Course</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let person of persons">
+            <th scope="row">{{person.fullname}}</th>
+            <th scope="row">{{person.city}}</th>
+            <img src="{{person.image}}" alt="" width="40px" height="40px">
+            <th scope="row">{{person.course}}</th>
+          </tr>
+         
+        </tbody>
+      </table>
+</div>

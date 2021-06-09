@@ -27,6 +27,7 @@ this.msg="This is mouse out";
   {
     this.data="This is loaded when Load Data button is Clicked";
   }
+  
 invalue:string;
   onclick(sun)
   {
